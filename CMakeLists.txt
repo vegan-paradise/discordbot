@@ -5,7 +5,7 @@ add_subdirectory(libs/DPP)
 add_subdirectory(libs/spdlog)
 
 add_executable(${PROJECT_NAME}
-    src/main.cpp
+   src/main.cpp
         src/commands/links/dominion.cpp
         src/commands/links/dominion.hpp
         src/commands/links/earthlings.cpp
@@ -17,7 +17,7 @@ add_executable(${PROJECT_NAME}
         src/commands/links/eisen.hpp
         src/commands/links/protein.hpp
         src/commands/links/bingo.cpp
-        src/utils/secrets.hpp
+        src/utils/secrets.hpp 
 )
 
 target_link_libraries(${PROJECT_NAME}
