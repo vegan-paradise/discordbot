@@ -18,7 +18,6 @@ add_executable(${PROJECT_NAME}
         src/commands/links/protein.hpp
         src/commands/links/bingo.cpp
         src/utils/secrets.hpp
-        src/commands/verify/setup_verify.cpp
 )
 
 target_link_libraries(${PROJECT_NAME}

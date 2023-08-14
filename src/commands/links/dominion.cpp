@@ -10,6 +10,6 @@ dpp::slashcommand command_dominion() {
             .set_description("Schickt Link zu Dominion");
 }
 
-void handle_dominion(dpp::cluster& client, const dpp::slashcommand_t& event) {
+void handle_dominion(const dpp::slashcommand_t &event) {
     post_an3x("dominion", event);
 }

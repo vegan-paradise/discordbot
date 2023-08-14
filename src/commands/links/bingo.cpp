@@ -12,6 +12,6 @@ dpp::slashcommand command_bingo() {
             .set_description("Bingo Bild");
 }
 
-void handle_bingo(dpp::cluster& client, const dpp::slashcommand_t& event) {
+void handle_bingo(const dpp::slashcommand_t &event) {
     post_picture("bingo", event);
 }

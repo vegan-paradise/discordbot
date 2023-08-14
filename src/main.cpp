@@ -14,15 +14,15 @@ int main() {
 
     client.on_slashcommand([&client](const dpp::slashcommand_t &event) {
         if (event.command.get_command_name() == "bingo") {
-            handle_bingo(client, event);
+            handle_bingo(event);
         } else if (event.command.get_command_name() == "dominion") {
-            handle_dominion(client, event);
+            handle_dominion(event);
         } else if (event.command.get_command_name() == "earthlings") {
-            handle_earthlings(client, event);
+            handle_earthlings(event);
         } else if (event.command.get_command_name() == "eisen") {
-            handle_eisen(client, event);
+            handle_eisen(event);
         } else if (event.command.get_command_name() == "protein") {
-            handle_protein(client, event);
+            handle_protein(event);
         }
     });
 

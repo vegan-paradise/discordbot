@@ -10,6 +10,6 @@ dpp::slashcommand command_eisen() {
             .set_description("Lebensmittel mit mehr Eisen als Rindfleisch");
 }
 
-void handle_eisen(dpp::cluster& client, const dpp::slashcommand_t& event) {
+void handle_eisen(const dpp::slashcommand_t &event) {
    post_picture("eisen", event);
 }
