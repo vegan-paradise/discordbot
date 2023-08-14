@@ -3,7 +3,7 @@
 //
 
 #include <dpp/dpp.h>
-#include "../utils/postLink.hpp"
+#include "../../utils/postLink.hpp"
 dpp::slashcommand command_dominion() {
     return dpp::slashcommand()
             .set_name("dominion")

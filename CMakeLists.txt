@@ -6,12 +6,19 @@ add_subdirectory(libs/spdlog)
 
 add_executable(${PROJECT_NAME}
     src/main.cpp
-    src/command/dominion.cpp
-    src/command/dominion.hpp
-        src/command/earthlings.cpp
+        src/commands/links/dominion.cpp
+        src/commands/links/dominion.hpp
+        src/commands/links/earthlings.cpp
         src/utils/postLink.cpp
         src/utils/postLink.hpp
-        src/command/eisen.cpp
+        src/commands/links/eisen.cpp
+        src/commands/links/protein.cpp
+        src/commands/links/earthlings.hpp
+        src/commands/links/eisen.hpp
+        src/commands/links/protein.hpp
+        src/commands/links/bingo.cpp
+        src/utils/secrets.hpp
+        src/commands/verify/setup_verify.cpp
 )
 
 target_link_libraries(${PROJECT_NAME}
